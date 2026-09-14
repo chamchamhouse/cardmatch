@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-08",
-  "note": "통합 DB v0.2 — 사용자 보유 5종 + 추천 3종 + 인기 12종(중복 제외). confidence:확인필요 항목은 릴리스 빌드에서 미노출.",
+  "updatedAt": "2026-09-14",
+  "note": "통합 DB v0.2 — 사용자 보유 5종 + 추천 3종 + 인기 12종(중복 제외). confidence:확인필요 항목은 릴리스 빌드에서 미노출. v0.3 — 백화점·아울렛(department)·공항라운지·주차(lounge) 카테고리 신설, 신규 카드 9종 추가.",
   "cards": [
     {
       "id": "toss-samsung",
@@ -4321,6 +4321,345 @@
       "baseBenefit": "국내·외 전 가맹점 1% 상당 마일리지 적립 (한도 무제한)",
       "baseBenefitConfidence": "확인필요",
       "reviewNote": "조사일 2026-09-08. 출처: m.bccard.com 공식 카드 상세페이지(cardGdsNo=104561, 'BLISS Point'). 해당 페이지 원문이 '대한항공 마일리지 적립 카드는 BLISS Mileage'라고 명시해 같은 시리즈의 마일리지 적립형 자매 상품임을 확인했으나, BLISS Mileage 전용 별도 상세페이지(고유 cardGdsNo)는 찾지 못함. BC카드의 BLISS.5/.7 시리즈가 포인트형·마일리지형을 조건·한도 동일하게 운영하는 관례가 있어 연회비·실적조건·실적제외항목은 공식확인으로 표기했으나, 정확한 카테고리별 마일리지 적립률·한도 수치는 Point 버전 수치를 참고만 한 것이라 확인필요로 표기함. 음식점(2%)·해외가맹점(2%) 혜택은 14개 카테고리 중 대응값이 없어 생략."
+    },
+    {
+      "id": "shinhan-sinsegae",
+      "name": "신세계 신한카드",
+      "issuer": "신한카드",
+      "annualFee": "15,000원(Mastercard) / 12,000원(UPI)",
+      "officialUrl": "https://www.shinhancard.com/pconts/html/card/apply/credit/1188439_2207.html",
+      "officialLabel": "신한카드 공식 홈페이지",
+      "spendingReq": "전월실적 50만원 이상부터 구간별 차등(50만~100만원 미만/100만~150만원 미만/150만원 이상)",
+      "benefits": [
+        {
+          "category": "department",
+          "merchants": [
+            "신세계백화점"
+          ],
+          "desc": "신세계백화점 결제 시 5% 결제일 할인",
+          "condition": "전월실적 50만원 이상~100만원 미만: 월 한도 1만원 / 100만원 이상~150만원 미만: 2만원 / 150만원 이상: 3만원. 일 1회, 월 6회, 1회 최대 5천원. 온라인 매장·일부 임대매장 제외",
+          "limit": "전월실적 구간별 월 1만~3만원",
+          "confidence": "공식확인",
+          "source": "신한카드 공식 홈페이지 '혜택 안내' 팝업, 신세계백화점 할인 탭"
+        }
+      ]
+    },
+    {
+      "id": "shinhan-starfield",
+      "name": "스타필드 신한카드",
+      "issuer": "신한카드",
+      "annualFee": "17,000원(국내전용) / 20,000원(Mastercard)",
+      "officialUrl": "https://www.shinhancard.com/pconts/html/card/apply/credit/1233072_2207.html",
+      "officialLabel": "신한카드 공식 홈페이지",
+      "spendingReq": "전월 이용금액 40만원 이상부터 구간별 차등",
+      "benefits": [
+        {
+          "category": "department",
+          "merchants": [
+            "스타필드"
+          ],
+          "desc": "스타필드 이용금액 10% 결제일 할인(스타필드·스타필드 시티 한정, 더샵스앳센터필드·스타필드마켓·스타필드빌리지 등 파생 브랜드 제외)",
+          "condition": "전월 40만원 이상~80만원 미만: 월 한도 2만원 / 80만~120만원 미만: 3만원 / 120만원 이상: 4만원. 할인 전 이용금액 기준 1일 10만원까지(할인액 1일 1만원)",
+          "limit": "전월실적 구간별 월 2만~4만원",
+          "confidence": "공식확인",
+          "source": "신한카드 공식 홈페이지 '혜택 안내' 팝업, 스타필드 할인 서비스"
+        },
+        {
+          "category": "department",
+          "merchants": [
+            "신세계백화점",
+            "이마트",
+            "트레이더스 홀세일 클럽",
+            "일렉트로마트",
+            "노브랜드",
+            "이마트24",
+            "SSG.COM",
+            "G마켓",
+            "옥션",
+            "스타벅스",
+            "까사미아"
+          ],
+          "desc": "신세계 계열사 5% 결제일 할인(오프라인 매장 한정, 앱/웹 온라인 결제 제외)",
+          "condition": "전월 40만원 이상~80만원 미만: 월 한도 1만원 / 80만~120만원 미만: 2만원 / 120만원 이상: 3만원(신세계계열사+라이프 영역 통합 한도). 상품권 구매·문화센터·주차장·임대매장 이용액 제외. 1일 14만원까지(할인액 1일 7천원)",
+          "limit": "전월실적 구간별 월 1만~3만원",
+          "confidence": "공식확인",
+          "source": "신한카드 공식 홈페이지 '혜택 안내' 팝업, 신세계 계열사 할인 서비스"
+        }
+      ]
+    },
+    {
+      "id": "hana-sinsegae-modu",
+      "name": "모두의 신세계 하나카드",
+      "issuer": "하나카드",
+      "annualFee": "12,000원(국내전용/국내외겸용 VISA)",
+      "officialUrl": "https://www.hanacard.co.kr/OPI42000000D.web?_frame=no&CD_PD_SEQ=13838",
+      "officialLabel": "하나카드 공식 홈페이지",
+      "spendingReq": "전월실적 40만원 이상(지난달 1일~말일 국내외 일시불/할부 이용금액 기준, 신규 발급월 다음달 말까지는 실적 무관 적용)",
+      "benefits": [
+        {
+          "category": "department",
+          "merchants": [
+            "신세계백화점",
+            "신세계 아카데미(문화센터)",
+            "시코르닷컴"
+          ],
+          "desc": "신세계백화점·신세계 아카데미(문화센터)·시코르닷컴 5% 청구할인",
+          "condition": "전월실적 40만원 이상. 오프라인 매장 결제에 한함(온라인 제외) — 단, 시코르닷컴은 온라인몰이라 원문 자체에 다소 모순되는 표현이 있어 그대로 옮김",
+          "limit": "월 최대 2만원",
+          "confidence": "공식확인",
+          "source": "하나카드 공식 홈페이지 '청구할인 서비스' 탭"
+        }
+      ]
+    },
+    {
+      "id": "lotte-department-store",
+      "name": "롯데백화점 롯데카드",
+      "issuer": "롯데카드",
+      "annualFee": "10,000원(국내전용/L·Global) / 15,000원(Master/Amex)",
+      "officialUrl": "https://www.lottecard.co.kr/app/LPCDADB_V100.lc?vtCdKndC=P11714-A11714",
+      "officialLabel": "롯데카드 공식 홈페이지",
+      "spendingReq": "지난달 실적 30만원 이상부터 구간별 차등",
+      "benefits": [
+        {
+          "category": "department",
+          "merchants": [
+            "롯데백화점"
+          ],
+          "desc": "롯데백화점 15% 청구할인(오프라인 매장 이용 시 제공)",
+          "condition": "지난달 실적 30만원 이상: 월 한도 2만원 / 50만원 이상: 3만원 / 100만원 이상: 5만원 / 200만원 이상: 10만원",
+          "limit": "지난달 실적 구간별 월 2만~10만원",
+          "confidence": "공식확인",
+          "source": "롯데카드 공식 홈페이지 '할인' 탭 > '롯데백화점 15% 청구할인 서비스'",
+          "trap": "엘롯데, 롯데아울렛, 롯데몰은 서비스 대상 가맹점에서 제외(롯데프리미엄아울렛 등 아울렛 매장엔 이 혜택이 적용되지 않음)"
+        }
+      ]
+    },
+    {
+      "id": "woori-galleria",
+      "name": "갤러리아 우리카드",
+      "issuer": "우리카드",
+      "annualFee": "12,000원(VISA/Mastercard) / 10,000원(UnionPay)",
+      "officialUrl": "https://pc.wooricard.com/dcpc/yh2/bcd/bcd01/cdadv/H2BCD201S01.do",
+      "officialLabel": "우리카드 공식 홈페이지",
+      "spendingReq": "청구할인은 전월 국내가맹점 이용금액 30만원 이상(즉시할인은 조건 별도, condition 참조)",
+      "benefits": [
+        {
+          "category": "department",
+          "merchants": [
+            "갤러리아백화점",
+            "갤러리아 Mall"
+          ],
+          "desc": "갤러리아백화점/Mall 정상상품 5% 현장(즉시)할인",
+          "condition": "직전 3개월 구매실적이 있는 경우 월 3회(또는 전년도 구매금액 500만원 이상/마일리지 5천점 이상 시 상시 적용). 신규 가입 후 3개월간은 실적 무관 월 3회. 정상상품 한정 — 행사상품·일부 명품 브랜드·식품관·가전·임대매장 제외",
+          "limit": "월 3회(조건 충족 시 상시)",
+          "confidence": "공식확인",
+          "source": "우리카드 공식 홈페이지 '혜택' 탭, 갤러리아 할인"
+        },
+        {
+          "category": "department",
+          "merchants": [
+            "갤러리아백화점",
+            "갤러리아 Mall"
+          ],
+          "desc": "갤러리아 백화점(오프라인)·Mall(온라인) 5% 청구할인",
+          "condition": "전월 국내가맹점 이용금액 30만원 이상. 월 한도(편의점·레저 혜택과 통합): 30만~50만원 미만 1만원 / 50만~100만원 미만 2만원 / 100만원 이상 3만원",
+          "limit": "전월실적 구간별 월 1만~3만원(편의점·레저 혜택 통합 한도)",
+          "confidence": "공식확인",
+          "source": "우리카드 공식 홈페이지 '혜택' 탭, 갤러리아 백화점/편의점/레저 5% 청구할인",
+          "trap": "이 페이지는 '2023년 7월 현재 기준'이라는 문구가 있어 최신 변경 여부는 카드 신청 전 재확인 필요"
+        }
+      ]
+    },
+    {
+      "id": "hyundai-the-red",
+      "name": "현대카드 the Red",
+      "issuer": "현대카드",
+      "officialUrl": "https://www.hyundaicard.com/cms_content/card_benefits/comm/202916_benefit_M.html",
+      "officialLabel": "현대카드 공식 홈페이지(여행 혜택 안내)",
+      "benefits": [
+        {
+          "category": "lounge",
+          "merchants": [
+            "Priority Pass 가맹 전 세계 공항라운지(약 700여개)"
+          ],
+          "desc": "Priority Pass 멤버십 카드 제공 — 전 세계 공항 라운지 이용 가능(동반인은 입장료 부과)",
+          "condition": "발급 초년도: 라운지 이용 2일 전까지 당월 이용금액 50만원 이상 / 2년차 이후: 전년도 카드 이용금액 600만원 이상 시 갱신",
+          "limit": "본인 이용 횟수 제한 없음(동반인은 무료 대상 아님)",
+          "confidence": "공식확인",
+          "source": "현대카드 공식 홈페이지 여행 혜택 페이지"
+        },
+        {
+          "category": "lounge",
+          "merchants": [
+            "국내 특급호텔",
+            "인천국제공항 제1·2여객터미널"
+          ],
+          "desc": "국내 특급호텔 및 인천국제공항 무료 발레파킹 서비스",
+          "condition": "당월 결제일자 청구된 일시불+할부 이용금액 50만원 이상(신규 발급 후 3개월은 실적 조건 없이 이용 가능)",
+          "limit": "특급호텔 월 5회, 인천공항(제1·2터미널 통합) 월 5회",
+          "confidence": "공식확인",
+          "source": "현대카드 공식 홈페이지 여행 혜택 페이지"
+        }
+      ],
+      "reviewNote": "2026-09-14: the Red 내 세부 종류(캐시백형/항공마일리지형/Edition 등)별로 연회비가 상이해 이번 조사에서 단일 수치로 공식 확인하지 못해 annualFee 생략."
+    },
+    {
+      "id": "shinhan-the-classic-plus-amex",
+      "name": "신한카드 The CLASSIC+ (아메리칸 익스프레스)",
+      "issuer": "신한카드",
+      "annualFee": "본인 125,000원 / 가족 30,000원",
+      "officialUrl": "https://www.shinhancard.com/pconts/html/card/apply/premium/1187949_2205.html",
+      "officialLabel": "신한카드 공식 홈페이지",
+      "spendingReq": "전월 일시불·할부 이용금액 30만원 이상(신규 발급 회원은 발급월 서비스 미제공)",
+      "benefits": [
+        {
+          "category": "lounge",
+          "merchants": [
+            "Priority Pass 가맹 해외 공항 VIP라운지"
+          ],
+          "desc": "Priority Pass 멤버십 카드 제공 — 해외 공항라운지 무료 이용(국내 공항라운지는 무료 대상 아님, 현장 유료)",
+          "condition": "전월 이용금액 30만원 이상, 본인회원만 해당(가족카드 제외), 항공권 탑승자명과 신청자명 일치 필요",
+          "limit": "해외 라운지 횟수 제한 없음",
+          "confidence": "공식확인",
+          "source": "신한카드 공식 홈페이지 The CLASSIC+ 상품 페이지"
+        }
+      ]
+    },
+    {
+      "id": "shinhan-rpm-plus-platinum",
+      "name": "신한카드 RPM+ Platinum#",
+      "issuer": "신한카드",
+      "officialUrl": "https://www.shinhancard.com/pconts/html/card/apply/credit/1187945_2207.html",
+      "officialLabel": "신한카드 공식 홈페이지",
+      "spendingReq": "직전월(1일~말일) 이용금액(일시불+할부) 30만원 이상(신규회원은 등록월 포함 1개월간 실적 조건 없이 제공)",
+      "benefits": [
+        {
+          "category": "lounge",
+          "merchants": [
+            "전국 주요중심가 지정 주차장(명동·서울 트윈트리타워·대전·천안아산 등 7개 상권 내 25개소)",
+            "KTX 역사 주차장(서울역·광명역·울산역·부산역·광주송정역)"
+          ],
+          "desc": "지정 제휴 주차장 무료 주차 서비스",
+          "condition": "직전월 이용금액 30만원 이상(본인/가족카드 통합, Platinum# 계열 통합)",
+          "limit": "일 1회, 월 3회",
+          "confidence": "공식확인",
+          "source": "신한카드 공식 홈페이지 RPM+ Platinum# 상품 페이지"
+        }
+      ],
+      "reviewNote": "2026-09-14: 연회비는 공식 페이지가 동적 로딩 구조라 이번 조사에서 정확한 수치를 확인하지 못해 생략(비공식 출처는 국내 3.2만원/해외겸용 3.5만원 언급하나 공식 미확인)."
+    },
+    {
+      "id": "samsung-theid-1st",
+      "name": "삼성카드 THE iD. 1st",
+      "issuer": "삼성카드",
+      "annualFee": "150,000원(국내전용/해외겸용 마스터카드 동일)",
+      "officialUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1886",
+      "officialLabel": "삼성카드 공식 홈페이지",
+      "benefits": [
+        {
+          "category": "lounge",
+          "merchants": [
+            "국내·해외 공항라운지(The Lounge 제휴)"
+          ],
+          "desc": "국내·외 공항 라운지 연 3회 무료 이용, 동반인도 무료 이용 대상에 포함(조합에 따라 최대 2인 무료)",
+          "condition": "정확한 전월실적 조건은 공식 상품페이지에 별도 명시되어 있지 않아 확인필요",
+          "limit": "연 3회",
+          "confidence": "확인필요",
+          "source": "삼성카드 공식 홈페이지 + 한국일보 2025.11.27 기사(삼성카드 보도자료 인용, 연 3회·동반인 조건 교차확인용)"
+        },
+        {
+          "category": "lounge",
+          "merchants": [
+            "특급호텔"
+          ],
+          "desc": "해외겸용(마스터카드) 발급 시 마스터카드 WORLD 등급 혜택으로 특급호텔 무료 발렛파킹 제공",
+          "condition": "해외겸용(마스터카드) 카드 소지자 한정",
+          "limit": "확인필요",
+          "confidence": "확인필요",
+          "source": "삼성카드 공식 홈페이지"
+        }
+      ]
+    },
+    {
+      "id": "hyundai-the-green-edition4",
+      "name": "the Green Edition4",
+      "issuer": "현대카드",
+      "annualFee": "Visa/국내전용 동일 본인 200,000원(메탈 플레이트 발급 수수료 10만원 별도)",
+      "officialUrl": "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=TGE4",
+      "officialLabel": "현대카드 공식",
+      "spendingReq": "기본 혜택(국내외 가맹점 1.5% M포인트 적립)과 우대 서비스(공항 라운지·발레파킹)는 전월 이용금액 50만원 이상, 추가 혜택(여행·해외·다이닝 5% M포인트 적립)은 전월 이용금액 100만원 이상 시 제공",
+      "benefits": [
+        {
+          "category": "lounge",
+          "merchants": [
+            "국내외 공항 라운지 약 1,000여 개(The Lounge 서비스)"
+          ],
+          "desc": "국내외 1,000여 개 공항 라운지 무료 이용(The Lounge)",
+          "condition": "전월 이용금액 50만원 이상",
+          "limit": "공식 카드상세 페이지에 이용 횟수 명시 없음(상품설명서 확인 필요)",
+          "confidence": "공식확인"
+        },
+        {
+          "category": "lounge",
+          "merchants": [
+            "인천국제공항",
+            "국내 특급호텔"
+          ],
+          "desc": "인천국제공항 및 국내 특급호텔 무료 발레파킹",
+          "condition": "전월 이용금액 50만원 이상",
+          "limit": "공식 카드상세 페이지에 이용 횟수 명시 없음(상품설명서 확인 필요)",
+          "confidence": "공식확인"
+        }
+      ],
+      "baseBenefit": "전월 이용금액 50만원 이상 시 국내외 전 가맹점 1.5% M포인트 적립",
+      "baseBenefitConfidence": "공식확인",
+      "reviewNote": "2026-09-14 조사, 출처: 현대카드 공식 카드상세 페이지(cardWcd=TGE4). 카드 신규 출시 2026-08-24. 추가 혜택 대상인 '여행'(월 5만 M포인트)·'해외'(월 4만)·'다이닝'(월 1만) 영역은 cards.json 카테고리에 대응 항목이 없어 benefits에 넣지 않고 spendingReq로만 기재. 연간 보너스(발급 첫해 누적 100만원 이상, 2년차 이후 전년도 1,200만원 이상 시 15만원권 바우처)도 카테고리 외라 생략. 연회비의 기본/제휴 구분 금액은 공식 페이지에 표시되지 않아 총액만 기재."
+    },
+    {
+      "id": "hyundai-the-pink-edition3",
+      "name": "the Pink Edition3",
+      "issuer": "현대카드",
+      "annualFee": "Visa/국내전용 동일 본인 200,000원(메탈 플레이트 발급 수수료 10만원 별도)",
+      "officialUrl": "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=TPIE3",
+      "officialLabel": "현대카드 공식",
+      "spendingReq": "기본 혜택(국내외 가맹점 1.5% M포인트 적립)과 우대 서비스(공항 라운지·발레파킹)는 전월 이용금액 50만원 이상, 추가 혜택(백화점/프리미엄 아울렛·패션/뷰티·온라인몰 5% M포인트 적립)은 전월 이용금액 100만원 이상 시 제공",
+      "benefits": [
+        {
+          "category": "department",
+          "merchants": [
+            "백화점",
+            "프리미엄 아울렛"
+          ],
+          "desc": "백화점·프리미엄 아울렛 5% M포인트 적립",
+          "condition": "전월 이용금액 100만원 이상",
+          "limit": "백화점/프리미엄 아울렛 영역 월 5만 M포인트 적립 한도",
+          "confidence": "공식확인"
+        },
+        {
+          "category": "lounge",
+          "merchants": [
+            "국내외 공항 라운지 약 1,000여 개(The Lounge 서비스)"
+          ],
+          "desc": "국내외 1,000여 개 공항 라운지 무료 이용(The Lounge)",
+          "condition": "전월 이용금액 50만원 이상",
+          "limit": "공식 카드상세 페이지에 이용 횟수 명시 없음(상품설명서 확인 필요)",
+          "confidence": "공식확인"
+        },
+        {
+          "category": "lounge",
+          "merchants": [
+            "인천국제공항",
+            "국내 특급호텔"
+          ],
+          "desc": "인천국제공항 및 국내 특급호텔 무료 발레파킹",
+          "condition": "전월 이용금액 50만원 이상",
+          "limit": "공식 카드상세 페이지에 이용 횟수 명시 없음(상품설명서 확인 필요)",
+          "confidence": "공식확인"
+        }
+      ],
+      "baseBenefit": "전월 이용금액 50만원 이상 시 국내외 전 가맹점 1.5% M포인트 적립",
+      "baseBenefitConfidence": "공식확인",
+      "reviewNote": "2026-09-14 조사, 출처: 현대카드 공식 카드상세 페이지(cardWcd=TPIE3). 카드 신규 출시 2026-08-24. 추가 혜택 3개 영역 중 '패션/뷰티'(월 3만 M포인트)·'온라인몰'(월 2만)은 cards.json 카테고리에 대응 항목이 없어 생략하고 '백화점/프리미엄 아울렛'만 department로 반영. 공식 페이지에 개별 제휴 백화점·아울렛 브랜드명이 명시돼 있지 않아 merchants는 업종 표현으로만 기재. 연간 보너스(15만원권 바우처) 및 연회비 기본/제휴 구분은 공식 페이지 미표시라 생략."
     }
   ],
   "categories": {
@@ -4483,6 +4822,36 @@
         "사교육",
         "보습학원",
         "원어민"
+      ]
+    },
+    "department": {
+      "label": "백화점·아울렛",
+      "aliases": [
+        "백화점",
+        "아울렛",
+        "신세계백화점",
+        "롯데백화점",
+        "현대백화점",
+        "갤러리아",
+        "갤러리아백화점",
+        "스타필드",
+        "프리미엄아울렛",
+        "롯데아울렛",
+        "신세계사이먼"
+      ]
+    },
+    "lounge": {
+      "label": "공항라운지·주차",
+      "aliases": [
+        "공항라운지",
+        "라운지",
+        "프라이오리티패스",
+        "공항",
+        "주차",
+        "주차장",
+        "발렛",
+        "발렛파킹",
+        "무료주차"
       ]
     }
   },
