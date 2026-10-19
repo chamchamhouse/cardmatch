@@ -1,33 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>카드매치 — 내 카드 혜택 찾기</title>
-<style>
-  :root { --bg:#ffffff; --ink:#1a1d24; --sub:#5c6472; --line:#e5e7eb; --brand:#2563eb; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#0f1115; --ink:#f0f1f3; --sub:#9aa2ae; --line:#2a2f38; --brand:#6d9bff; }
-  }
-  body { font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; max-width: 560px; margin: 0 auto; padding: 48px 20px 60px; background: var(--bg); color: var(--ink); line-height: 1.7; word-break: keep-all; }
-  h1 { font-size: 26px; font-weight: 800; margin-bottom: 6px; }
-  h1 span { color: var(--brand); }
-  p.tagline { color: var(--sub); font-size: 15px; margin-bottom: 28px; }
-  ul { padding-left: 20px; margin-bottom: 28px; }
-  li { margin-bottom: 6px; }
-  a.link { color: var(--brand); font-weight: 600; text-underline-offset: 3px; }
-  .box { background: color-mix(in srgb, var(--brand) 8%, transparent); border-radius: 12px; padding: 16px 18px; font-size: 13.5px; color: var(--sub); margin-top: 32px; }
-</style>
-</head>
-<body>
-  <h1>카드<span>매치</span></h1>
-  <p class="tagline">매장을 검색하면, 내 카드 중 혜택 있는 카드를 찾아드려요. 실적 함정 경고까지 챙겨드립니다.</p>
-  <ul>
-    <li>보유 카드를 등록하면 카테고리·매장별로 어떤 카드가 유리한지 바로 알려드려요</li>
-    <li>"전월실적 미충족 시 혜택 제한" 같은 함정을 놓치지 않도록 경고해드려요</li>
-    <li>카드번호·거래내역은 수집하지 않고, 등록한 카드 목록은 기기 안에만 저장됩니다</li>
-  </ul>
-  <p><a class="link" href="privacy.html">개인정보처리방침 →</a></p>
-  <div class="box">ⓘ 이 페이지는 카드매치 앱의 공식 안내 페이지입니다. 앱은 카드사와 무관한 정보 안내 서비스로, 결제·금융거래·금융상품 판매를 수행하지 않습니다.</div>
-</body>
-</html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>카드매치 — 내 카드 혜택 찾기·쿠폰 지갑</title><meta name="description" content="매장을 검색하면 내 카드 중 혜택 있는 카드와 조건을 보여 주는 앱. 카드 정보는 카드사 공식 자료로 확인하고 확인일을 공개합니다."><link rel="canonical" href="https://chamchamhouse.github.io/cardmatch/index.html">
+<meta property="og:title" content="카드매치 — 내 카드 혜택 찾기·쿠폰 지갑"><meta property="og:description" content="매장을 검색하면 내 카드 중 혜택 있는 카드와 조건을 보여 주는 앱. 카드 정보는 카드사 공식 자료로 확인하고 확인일을 공개합니다."><meta property="og:type" content="website">
+<style>:root{--bg:#fff;--ink:#1a1d24;--sub:#5c6472;--line:#e5e7eb;--soft:#f5f7fb;--brand:#2563eb;--ok:#15803d;--warn:#b45309}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--ink:#f0f1f3;--sub:#9aa2ae;--line:#2a2f38;--soft:#171a21;--brand:#6d9bff;--ok:#4ade80;--warn:#fbbf24}}
+*{box-sizing:border-box}body{font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;max-width:760px;margin:0 auto;padding:28px 16px 64px;background:var(--bg);color:var(--ink);line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--brand);text-underline-offset:3px}h1{font-size:24px;line-height:1.35;margin:8px 0 6px}h2{font-size:19px;margin:34px 0 10px;padding-top:6px;border-top:1px solid var(--line)}h3{font-size:16px;margin:20px 0 6px}
+.crumb{font-size:13px;color:var(--sub)}.lead{color:var(--sub);margin:0 0 16px}.meta{font-size:13px;color:var(--sub)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}.stat{background:var(--soft);border-radius:12px;padding:12px 14px}.stat b{display:block;font-size:22px}
+.item{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}.item p{margin:4px 0}.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--soft);color:var(--sub);margin-right:4px}
+.tag.ok{color:var(--ok)}.tag.warn{color:var(--warn)}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--sub);font-weight:600;white-space:nowrap;padding-right:12px}
+.box{background:var(--soft);border-radius:12px;padding:14px 16px;font-size:13.5px;color:var(--sub);margin-top:36px}ul{padding-left:20px}.cols{columns:2 220px}.cols li{break-inside:avoid}
+footer{margin-top:28px;font-size:13px;color:var(--sub)}</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "카드매치", "operatingSystem": "Android", "applicationCategory": "FinanceApplication", "url": "https://chamchamhouse.github.io/cardmatch/", "installUrl": "https://play.google.com/store/apps/details?id=kr.chamchamhouse.cardmatch", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}}</script></head><body>
+<nav class="crumb"><a href="index.html">카드매치</a></nav>
+<h1>카드<span style="color:var(--brand)">매치</span></h1>
+<p class="lead">매장 이름이나 업종을 검색하면, 내가 가진 카드 중 혜택이 있는 카드와 조건을 보여 주는 앱입니다. 회원가입·카드번호 입력·은행 연결이 없습니다.</p>
+<p><a href="https://play.google.com/store/apps/details?id=kr.chamchamhouse.cardmatch"><b>Google Play에서 받기</b></a> <span class="meta">(스토어에서 찾을 때는 "카드매치 혜택")</span></p>
+<ul><li>매장·업종 검색으로 내 카드 혜택과 조건 확인, 밤·주말 한정 혜택은 지금 되는지까지</li><li>실적에서 빠지는 결제와 전월 실적 미달 미리 알림</li><li>기프티콘·멤버십 바코드를 모아 두는 쿠폰 지갑, 홈 화면 위젯</li><li>등록한 카드·쿠폰은 폰 안에만 저장</li></ul>
+<h2>카드 정보</h2><ul><li><a href="cards/index.html">카드 목록 115종</a> — 카드별 업종 혜택·연회비·전월 실적</li><li><a href="verify.html">검증 기록</a> — 공식 자료 확인 날짜, 출처, 의견으로 고친 내용</li><li><a href="privacy.html">개인정보처리방침</a></li></ul>
+<div class="box">ⓘ 카드매치는 카드사와 관계없는 정보 안내 서비스입니다. 카드 발급·결제를 중개하지 않으며, 이 페이지의 어떤 카드도 대가를 받고 싣지 않았습니다. 혜택은 바뀔 수 있으니 정확한 조건은 카드사 상품설명서와 약관에서 확인하세요.</div>
+<footer><a href="index.html">카드매치</a> · <a href="verify.html">검증 기록</a> · <a href="cards/index.html">카드 목록</a> · <a href="privacy.html">개인정보처리방침</a> · <a href="https://play.google.com/store/apps/details?id=kr.chamchamhouse.cardmatch">앱 받기(Google Play)</a></footer>
+</body></html>
